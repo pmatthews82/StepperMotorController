@@ -8,7 +8,7 @@ _Author: [Bhaskar Yechuri](bhaskar.yechuri@gmail.com), Engineering Technician & 
 This project is a complete Arduino sketch (built and tested for the Arduino Uno) which operates a [belt and stepper motor-driven linear actuator](https://openbuildspartstore.com/v-slot-nema-17-linear-actuator-bundle-belt-driven/) with an Arduino Uno via the [Big Easy Driver](https://www.sparkfun.com/products/12859). The system carries out the following functions:
 
 * Receives user input on the target velocity and stop position of the system
-* Moves the gantry plate up and down the linear rail while ramping up, holding a target velocity (maximum 30cm/s), and ramping down to a complete stop
+* Moves the gantry plate up and down the linear rail while accelerating, holding a target velocity (maximum 30cm/s), and decelerating to a complete stop
 * Carries out a homing step before each run, ensuring replicability between runs
 
 
