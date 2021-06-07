@@ -3,7 +3,7 @@ _Author: [Bhaskar Yechuri](bhaskar.yechuri@gmail.com), Engineering Technician & 
 
 # Stepper Motor Controller
 
-## Summary
+# Summary
 
 This project is a complete Arduino sketch (built and tested for the Arduino Uno) which operates a [belt and stepper motor-driven linear actuator](https://openbuildspartstore.com/v-slot-nema-17-linear-actuator-bundle-belt-driven/) with an Arduino Uno via the [Big Easy Driver](https://www.sparkfun.com/products/12859). The system carries out the following functions:
 
@@ -12,7 +12,7 @@ This project is a complete Arduino sketch (built and tested for the Arduino Uno)
 * Carries out a homing step before each run, ensuring replicability between runs
 
 
-## Instructions
+# Instructions
 
 _NOTE: Read all the way through the instructions before beginning the process._
 
@@ -28,7 +28,7 @@ _NOTE: Read all the way through the instructions before beginning the process._
 7. Once both values are entered correctly, the system will ramp up its speed using the lowest possible acceleration to reach the target velocity in the first 10cm of travel. After the first 10cm of travel, it will enter its constant velocity mode, which it will maintain until reaching the endpoint inputted by the user. Once the endpoint is reached, it will ramp down velocity over the next 15cm before coming to a complete stop
 8. At this point, the system will ask the user to enter any keyboard value to re-initiate the homing process. Once this is done, the system reverts to step #7 and it can be re-run an indefinite number of times with different target velocities and endpoints.
 
-## Speed Modification [OPTIONAL]
+# Speed Modification [OPTIONAL]
 
 _NOTE: The system will try its best to reach the target velocity specified by the user, but it is based only on rough estimates. To validate the true speed of the gantry, it is best to other methods, such as high-speed cameras. If the system is bottlenecked by any factor (e.g. current supply, Arduino Uno clock speed, etc.) the speed will be limited to the highest speed allowable by that bottleneck and nothing higher._
 
@@ -50,7 +50,7 @@ To change the microstepping mode, the following settings need to be changed in t
 1. At the top of the code, the variable for `steps_per_cm` needs to be set to the correct value (e.g. `sixteenth_steps_per_cm`, `eighth_steps_per_cm`, etc.)
 2. Next, the 3 pins corresponding to the `MS1`, `MS2` and `MS3` values need to be set according to the _"Microstep Select Resolution Truth Table"_ found in the [setup instructions](https://learn.sparkfun.com/tutorials/big-easy-driver-hookup-guide?_ga=2.116967247.876811756.1622225245-1078570728.1616535972).
 
-## Troubleshooting Tips
+# Troubleshooting Tips
 
 * If the motor stutters or stops, try adjusting the max current potentiometer on the Big Easy Driver using a screwdriver. Reducing the max current (anti-clockwise) setting seems to help prevent this problem. 
 * Pressing the reset button on the Arduino can help reset the position of the gantry plate, since that will initiate the homing sequence to run.
