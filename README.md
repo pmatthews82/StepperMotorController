@@ -1,4 +1,4 @@
-# StepperMotorController
+# Stepper Motor Controller
 
 ## Summary
 
