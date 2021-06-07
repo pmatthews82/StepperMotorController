@@ -1,3 +1,6 @@
+_Author: [Bhaskar Yechuri](bhaskar.yechuri@gmail.com), Engineering Technician & Research Assistant at the [Phil Matthews Lab](http://www.matthewslab.zoology.ubc.ca/index.html), University of British Columbia - Vancouver (Last Updated: June 2021)_
+
+
 # Stepper Motor Controller
 
 ## Summary
